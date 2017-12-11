@@ -39,6 +39,22 @@
             }
         },
         {
+            "Key": "094f25e2-8803-496c-a331-1d65ad6353e2",
+            "Value": {
+                "id": "bb090096-7a73-4a34-a5d3-9d5966e70614",
+                "resourcePath": "scripts\\net_BroadcastPacket\\net_BroadcastPacket.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0a91fe22-863e-427b-88c7-74946130cd2a",
+            "Value": {
+                "id": "f50c00f3-97c3-40a7-92f8-8ce0a8b34d85",
+                "resourcePath": "scripts\\net_AddClient\\net_AddClient.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1f056bad-cbb1-493d-9a0a-b68a611548b4",
             "Value": {
                 "id": "eb869808-a27d-4e31-8618-0c0201191f07",
@@ -83,6 +99,14 @@
             "Value": {
                 "id": "14192828-9962-4351-a304-492497194e71",
                 "resourcePath": "scripts\\net_ClientRecievePacket\\net_ClientRecievePacket.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3b418633-d6cb-4b75-974e-4f412bc767e8",
+            "Value": {
+                "id": "76520ffd-834b-470b-9208-171acf49543b",
+                "resourcePath": "scripts\\net_RemoveClient\\net_RemoveClient.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -132,6 +156,14 @@
                 "id": "a7091700-d1e8-44e2-a605-0e59ac328a33",
                 "resourcePath": "views\\4bc49ea9-2907-48e6-8627-8a0b725f51e6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4d5f8fca-9a5a-45c7-9b00-425c74ff6fb7",
+            "Value": {
+                "id": "1825f3be-45d3-4b50-827a-ac8a60497532",
+                "resourcePath": "scripts\\net_GenerateClientKey\\net_GenerateClientKey.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -295,6 +327,14 @@
             }
         },
         {
+            "Key": "a72eb73c-7984-4403-8ae0-9bc27b18a4a1",
+            "Value": {
+                "id": "0bd11e73-2299-48a3-bc98-213481aa7a19",
+                "resourcePath": "scripts\\net_BuildAllClientInfoPacket\\net_BuildAllClientInfoPacket.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "46332c10-a9c6-45b9-86f8-ba4d55d70f15",
@@ -455,6 +495,14 @@
             }
         },
         {
+            "Key": "f903d46c-ce58-4d42-ad70-31341c9b1d04",
+            "Value": {
+                "id": "cbe47814-cb78-490b-a8ce-f9d420ec430b",
+                "resourcePath": "objects\\NetworkManagerParent\\NetworkManagerParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f97e1569-f460-4656-abf6-2586bddd4cfd",
             "Value": {
                 "id": "42c6d305-5a3f-4035-989c-b61bba9e4560",
@@ -485,12 +533,17 @@
         "a9f9caa7-4d16-4832-91f3-a4841f4b26cc",
         "4e3ee1a8-3b11-45e5-ba76-e68b76e0ac23",
         "8891c935-8e5f-4131-b6f2-a1d94e207f0a",
+        "4d5f8fca-9a5a-45c7-9b00-425c74ff6fb7",
+        "094f25e2-8803-496c-a331-1d65ad6353e2",
         "c4244720-cf2a-4164-bf13-ee71449cfbcd",
         "33453604-2c42-4b20-a83f-28936ed9c970",
+        "0a91fe22-863e-427b-88c7-74946130cd2a",
+        "3b418633-d6cb-4b75-974e-4f412bc767e8",
         "1f056bad-cbb1-493d-9a0a-b68a611548b4",
         "80606a6d-03f8-44a8-8cfc-116bf3e43f7f",
         "9a93859e-21fc-4973-a544-d78e4800b81f",
         "ac8e7949-d56a-4835-88b1-dbb116d6451c",
+        "a72eb73c-7984-4403-8ae0-9bc27b18a4a1",
         "eea551eb-2338-4765-859d-5deba6c2e1c2"
     ],
     "tutorial": ""

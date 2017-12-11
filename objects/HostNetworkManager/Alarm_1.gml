@@ -20,4 +20,4 @@ if (instance_exists(Client))
 	}
 }
 alarm[1] = PURGE_FREQUENCY;
-ConsoleAddMessage("Purging....")
+ConsoleAddMessage("Purging Inactive Clients....")

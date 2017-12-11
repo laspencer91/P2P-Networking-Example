@@ -8,6 +8,8 @@ myClientId = -1;
 
 // Hosts Variables
 MAX_PLAYER = 10;
+clientCount = 1;
+
 clientIds = ds_stack_create();
 clientMap = ds_map_create();   // Key = "Clients Port", value = "Client Instance Id"
 

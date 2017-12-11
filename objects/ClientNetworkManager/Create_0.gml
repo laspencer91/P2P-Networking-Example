@@ -1,12 +1,10 @@
 /// @description Init Network Manager
 
-// Shared Variables
-previous_room = noone;
-
 state      = NetState.none;
 myPort     = 3224;
 socket     =  noone;
 myClientId = -1;
+clientCount = 1;
 
 // Client Related Variables
 hostIp	 = noone;

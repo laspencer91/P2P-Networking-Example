@@ -1,6 +1,4 @@
-/// @description Save Previous Room
-previous_room = room;
-
+/// @description Disconnect
 // TODO MAY NEED EDITING
 if (connected)
 {

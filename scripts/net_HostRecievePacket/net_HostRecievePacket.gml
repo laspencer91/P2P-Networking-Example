@@ -6,12 +6,7 @@ switch (recievedPType)
 	
 		if (_newClientId > -1 && !ds_map_exists(clientMap, string(recievedPort)))
 		{
-			_newClient = instance_create_layer(x, y, "ClientLayer", Client);
-			_newClient.port		= recievedPort;
-			_newClient.ip		= recievedIp;
-			_newClient.clientId = _newClientId;
-		
-			clientMap[? string(recievedPort)] = _newClient;
+			net_AddClient(recievedIp, recievedPort, _newClientId);
 			
 			sendBuffer = net_CreateBuffer(pType.CONNECTION_CONFIRMATION, _newClientId); 
 			net_SendPacket(sendBuffer, recievedIp, recievedPort);
@@ -24,11 +19,13 @@ switch (recievedPType)
 			buffer_delete(sendBuffer);
 		}
 	break;
+	
 	case (pType.CLIENT_HEARTBEAT):
-		var _updateInstance = clientMap[? string(recievedPort)];
+		var _updateInstance = clientMap[? net_GenerateClientKey()];
 		_updateInstance.lastUpdate = current_time;
 		ConsoleAddMessage("Heartbeat Recieved From Client " + string(_updateInstance.clientId))
 	break;
+	
 	case (pType.DISCONNECT):
 		net_HostDisconnectClient(clientMap[? string(recievedPort)]);
 	break;
