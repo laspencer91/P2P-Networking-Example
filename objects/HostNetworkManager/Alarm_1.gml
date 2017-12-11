@@ -9,10 +9,10 @@ if (instance_exists(Client))
 		if (current_time - lastUpdate > HOST_TIMEOUT_PERIOD)
 		{
 			// Nested with statement.. wtf?
-			with (NetworkManager)
+			with (HostNetworkManager)
 			{
 				sendBuffer = net_CreateBuffer(pType.DISCONNECT);
-				net_HostSendBuffer(other.ip, other.port, sendBuffer);
+				net_SendPacket(sendBuffer, other.ip, other.port);
 				buffer_delete(sendBuffer);
 			}
 			net_HostDisconnectClient(id);

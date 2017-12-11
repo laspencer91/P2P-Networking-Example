@@ -87,14 +87,6 @@
             }
         },
         {
-            "Key": "3d3229d6-a1c7-45d8-92b8-032adadbdcf3",
-            "Value": {
-                "id": "9dfa4304-5a6f-496a-a074-0b6b434aac09",
-                "resourcePath": "scripts\\net_HostSendBuffer\\net_HostSendBuffer.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "4309c8c4-a281-4cca-834e-f24fd89484ae",
             "Value": {
                 "id": "849197bd-5cd4-47dd-9140-5bfebcf11ba4",
@@ -119,10 +111,26 @@
             }
         },
         {
+            "Key": "4a43a484-d231-46d1-8a03-f400e97e6f30",
+            "Value": {
+                "id": "50e14283-e779-4f4c-980b-b2e837e6b727",
+                "resourcePath": "views\\4a43a484-d231-46d1-8a03-f400e97e6f30.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4ba65e74-476e-4aa1-976f-f23751df0424",
             "Value": {
                 "id": "06b62ec3-e635-4167-be3e-ef2aa27fba65",
                 "resourcePath": "views\\4ba65e74-476e-4aa1-976f-f23751df0424.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4bc49ea9-2907-48e6-8627-8a0b725f51e6",
+            "Value": {
+                "id": "a7091700-d1e8-44e2-a605-0e59ac328a33",
+                "resourcePath": "views\\4bc49ea9-2907-48e6-8627-8a0b725f51e6.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -148,6 +156,14 @@
                 "id": "9486e62c-66c5-4764-b637-c1f0a99d8185",
                 "resourcePath": "sprites\\sButtonHost\\sButtonHost.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "573dcefd-ba6c-423f-beaa-1ac62040f2b0",
+            "Value": {
+                "id": "17607686-1b38-41fe-9558-4dbd45608f96",
+                "resourcePath": "objects\\NetworkSpawner\\NetworkSpawner.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -255,19 +271,19 @@
             }
         },
         {
+            "Key": "8891c935-8e5f-4131-b6f2-a1d94e207f0a",
+            "Value": {
+                "id": "bf5b337a-3734-430f-99be-63d2df9dcf48",
+                "resourcePath": "scripts\\net_SendPacket\\net_SendPacket.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9a93859e-21fc-4973-a544-d78e4800b81f",
             "Value": {
                 "id": "7a5ffd2f-5e7a-456f-ac56-80fa453232bf",
                 "resourcePath": "scripts\\net_PopClientId\\net_PopClientId.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "9ee21686-43a5-4893-915c-28c0e8d70cf8",
-            "Value": {
-                "id": "b54c2684-5b0e-47c4-932b-00980893d52f",
-                "resourcePath": "objects\\NetworkManager\\NetworkManager.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -327,6 +343,14 @@
             }
         },
         {
+            "Key": "b6a24311-23c5-48ea-8943-b2d931d6d4f4",
+            "Value": {
+                "id": "57e95059-d7f9-4bc0-abf7-5eaf404f7de4",
+                "resourcePath": "objects\\ClientNetworkManager\\ClientNetworkManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bf451d0e-24fd-41e2-a4d1-c9f48149110a",
             "Value": {
                 "id": "7f20a356-d46a-4e6f-a31d-58a810a394ce",
@@ -339,14 +363,6 @@
             "Value": {
                 "id": "e0d2893d-5535-4de1-bcea-175c56867c4c",
                 "resourcePath": "scripts\\net_InitializeClient\\net_InitializeClient.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c7f3e577-c4bd-4171-a460-ad68b82f4130",
-            "Value": {
-                "id": "813bd1c6-0ef0-43ec-971a-c2aa20e3f47f",
-                "resourcePath": "scripts\\net_ClientSendBuffer\\net_ClientSendBuffer.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -379,6 +395,30 @@
             "Value": {
                 "id": "e6eaf849-7945-4e91-8e12-8d65eb188f73",
                 "resourcePath": "views\\d193a2f0-cfd5-4e06-b24a-d39c2f4b6338.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d4b3cc80-27c6-4bb0-83ef-603ccb567615",
+            "Value": {
+                "id": "31c4a15f-299a-42bc-b990-f283dd050eac",
+                "resourcePath": "objects\\HostNetworkManager\\HostNetworkManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d5d4a7dc-828c-4b52-af32-231b06e3b48a",
+            "Value": {
+                "id": "296528e6-854e-40bd-90b6-070c3e63c4e8",
+                "resourcePath": "views\\d5d4a7dc-828c-4b52-af32-231b06e3b48a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dd0b3962-0fae-40e0-8037-f8199d38260d",
+            "Value": {
+                "id": "4a2a0ad5-c684-4ca2-a19f-83138c87e143",
+                "resourcePath": "views\\dd0b3962-0fae-40e0-8037-f8199d38260d.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -444,13 +484,12 @@
         "b30cb0a1-7eea-4ffc-aa0d-1f6698bb8e3f",
         "a9f9caa7-4d16-4832-91f3-a4841f4b26cc",
         "4e3ee1a8-3b11-45e5-ba76-e68b76e0ac23",
+        "8891c935-8e5f-4131-b6f2-a1d94e207f0a",
         "c4244720-cf2a-4164-bf13-ee71449cfbcd",
         "33453604-2c42-4b20-a83f-28936ed9c970",
-        "c7f3e577-c4bd-4171-a460-ad68b82f4130",
         "1f056bad-cbb1-493d-9a0a-b68a611548b4",
         "80606a6d-03f8-44a8-8cfc-116bf3e43f7f",
         "9a93859e-21fc-4973-a544-d78e4800b81f",
-        "3d3229d6-a1c7-45d8-92b8-032adadbdcf3",
         "ac8e7949-d56a-4835-88b1-dbb116d6451c",
         "eea551eb-2338-4765-859d-5deba6c2e1c2"
     ],

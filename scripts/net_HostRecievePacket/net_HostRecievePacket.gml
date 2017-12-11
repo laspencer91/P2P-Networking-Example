@@ -13,13 +13,15 @@ switch (recievedPType)
 		
 			clientMap[? string(recievedPort)] = _newClient;
 			
-			sendBuffer = net_CreateBuffer(pType.CONNECTION_CONFIRMATION, _newClientId, buffer_u8); 
-			net_HostSendBuffer(recievedIp, recievedPort, sendBuffer);
+			sendBuffer = net_CreateBuffer(pType.CONNECTION_CONFIRMATION, _newClientId); 
+			net_SendPacket(sendBuffer, recievedIp, recievedPort);
 			buffer_delete(sendBuffer);
 		}
 		else
 		{
-			net_CreateBuffer(pType.CONNECTION_DENIED); // Server is full
+			sendBuffer = net_CreateBuffer(pType.CONNECTION_DENIED); // Server is full
+			net_SendPacket(sendBuffer, recievedIp, recievedPort);
+			buffer_delete(sendBuffer);
 		}
 	break;
 	case (pType.CLIENT_HEARTBEAT):

@@ -4,6 +4,6 @@
 if (!connected) 
 {
 	bufferToSend = net_CreateBuffer(pType.CONNECT_REQUEST);
-	net_ClientSendBuffer(bufferToSend);
+	net_SendPacket(bufferToSend, connectIp, connectPort);
 	alarm[0] = room_speed;
 }

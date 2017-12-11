@@ -5,6 +5,6 @@ previous_room = room;
 if (connected)
 {
 	sendBuffer = net_CreateBuffer(pType.DISCONNECT);
-	net_HostSendBuffer(connectIp, connectPort, sendBuffer);
+	net_SendPacket(sendBuffer, hostIp, hostPort);
 	buffer_delete(sendBuffer);
 }

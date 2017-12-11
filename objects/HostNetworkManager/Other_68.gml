@@ -9,9 +9,6 @@ buffer_seek(recievedBuffer, buffer_seek_start, 0);
 
 recievedPType = buffer_read(recievedBuffer, buffer_u8);
 
-if (state == NetState.host)
-	net_HostRecievePacket();
-else if (state == NetState.client)
-	net_ClientRecievePacket();
+net_HostRecievePacket();
 
 
