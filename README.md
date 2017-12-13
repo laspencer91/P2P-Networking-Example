@@ -20,10 +20,15 @@ on the other team.
 In order to get other team to spawn, you need to spawn more than 3 players in. And in order to do this you will need to connect multiple instances. For each instance you will need to set the port to an unused one.
 
 On my computer for example:
+
 I hosted on 3224.
+
 First Join on  127.0.0.1 : 3223
+
 Second Join on 127.0.0.1 : 3225
+
 Third Join on  127.0.0.1 : 3226
+
 Fourth Join on 127.0.0.1 : 3227
 
 Basically for each connection you need to find a free port on your computer that is not in use!!
