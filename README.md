@@ -17,6 +17,18 @@ You can press CONTROL at the main menu to insert a name if you would like. Once 
 timer. Once the timer is up, the clients will spawn. No friendly fire available, so you must spawn more than 3 players in to get someone
 on the other team.
 
+In order to get other team to spawn, you need to spawn more than 3 players in. And in order to do this you will need to connect multiple instances. For each instance you will need to set the port to an unused one.
+
+On my computer for example:
+I hosted on 3224.
+First Join on  127.0.0.1 : 3223
+Second Join on 127.0.0.1 : 3225
+Third Join on  127.0.0.1 : 3226
+Fourth Join on 127.0.0.1 : 3227
+
+Basically for each connection you need to find a free port on your computer that is not in use!!
+
+
 ## To start learning the project
 Start in the NetworkSpawner object, and the main menu buttons. You can follow them through. I give a quick walkthrough at the end of 
 my second Youtube stream. The code and structure could be MUCHHH better but I was in a little rush to get this one complete!
