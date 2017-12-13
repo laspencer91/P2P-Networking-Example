@@ -13,3 +13,5 @@ previous_room = noone;   // Main Menu
 hostPort = noone;
 hostIp   = noone;
 myPort   = noone;
+
+displayName = "Cool Player";

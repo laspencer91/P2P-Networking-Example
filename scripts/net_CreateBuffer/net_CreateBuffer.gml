@@ -1,8 +1,9 @@
 /// @desc Build a buffer to send, Must supply message type, then ClientId when needed, followed by 
 ///       a series of (value, type) patterns.
-/// @arg messageType Type of Network Packet To Send
-/// @arg clientId needed if sending more info than just the messageType
-/// @arg data,dataType..  Repeat pattern for all information wanting to write
+/// @arg messageType Type Packet
+/// @arg clientId need if sending more than just pType
+/// @arg data 
+/// @arg dataType..  Repeat pattern for all information wanting to write
 // Index 0: type of Message
 // Index 1: client id byte_u8
 // Index 2: Value of next data = "sfsfs"

@@ -1,8 +1,8 @@
 {
-    "id": "a72eb73c-7984-4403-8ae0-9bc27b18a4a1",
+    "id": "b2a2c7b6-45ae-4eff-821e-ec57ad8aac14",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "net_BuildAllClientInfoPacket",
+    "name": "net_UnpackAllPeerInfoPacket",
     "IsCompatibility": false,
     "IsDnD": false
 }

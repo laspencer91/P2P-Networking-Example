@@ -7,6 +7,7 @@ if (previous_room == rMainMenu)
 	manager.myPort = myPort;
 	manager.hostPort = hostPort;
 	manager.hostIp   = hostIp;
+	manager.myClientName = displayName;
 	
 	instance_destroy();
 }

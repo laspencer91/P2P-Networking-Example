@@ -1,12 +1,13 @@
 {
-    "id": "51daf1d4-ae16-4381-9ade-b12f7fadbefd",
+    "id": "d91e5c92-8f72-494a-9ae2-ad2941d2b0ab",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Enemy",
+    "name": "SpawnPoint",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -21,7 +22,23 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "83bb76c4-bed8-48a5-beaa-67e8e7702160",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "team",
+            "varType": 1
+        }
+    ],
     "solid": false,
-    "spriteId": "5bd93cf0-ff3e-44dd-ae0d-be9f5a02b94b",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

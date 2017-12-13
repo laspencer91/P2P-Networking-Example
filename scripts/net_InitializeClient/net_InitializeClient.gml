@@ -1,9 +1,8 @@
 /// @desc Setup Client Things
-myPort = 3223;
 socket = network_create_socket_ext(network_socket_udp, myPort);
 
 // Try to do connection stuff
-bufferToSend = net_CreateBuffer(pType.CONNECT_REQUEST);
+bufferToSend = net_CreateBuffer(pType.CONNECT_REQUEST, 1, myClientName, buffer_text);
 net_SendPacket(bufferToSend, hostIp, hostPort);
 buffer_delete(bufferToSend);
 

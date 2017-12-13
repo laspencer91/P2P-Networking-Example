@@ -3,17 +3,17 @@
 // Shared Variables
 state      = NetState.none;
 myPort     = 3224;
-socket     =  noone;
+socket     = noone;
 myClientId = -1;
 
 // Hosts Variables
-MAX_PLAYER = 10;
+MAX_PLAYER = 6;
 clientCount = 1;
 
 clientIds = ds_stack_create();
-clientMap = ds_map_create();   // Key = "Clients Port", value = "Client Instance Id"
+clientMap = ds_map_create();   // Key = Clients "Ip + Port", value = "Client Instance Id"
 
-for(i = 10 - 1; i > -1; i--)
+for(i = MAX_PLAYER - 1; i > -1; i--)
 	ds_stack_push(clientIds, i);
 
 // Initialize host after create event, this is so that the

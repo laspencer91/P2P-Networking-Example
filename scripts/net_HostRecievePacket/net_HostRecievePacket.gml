@@ -4,12 +4,18 @@ switch (recievedPType)
 	case (pType.CONNECT_REQUEST):
 		var _newClientId = net_PopClientId();
 	
-		if (_newClientId > -1 && !ds_map_exists(clientMap, string(recievedPort)))
+		if (_newClientId > -1 && !ds_map_exists(clientMap,	string(recievedIp) + string(recievedPort)))
 		{
-			net_AddClient(recievedIp, recievedPort, _newClientId);
+			_sendingClientId = buffer_read(recievedBuffer, buffer_u8);
+			var _newClientDisplayName = buffer_read(recievedBuffer, buffer_text);
+			net_AddClient(recievedIp, recievedPort, _newClientId, _newClientDisplayName);
 			
 			sendBuffer = net_CreateBuffer(pType.CONNECTION_CONFIRMATION, _newClientId); 
 			net_SendPacket(sendBuffer, recievedIp, recievedPort);
+			buffer_delete(sendBuffer);
+			
+			sendBuffer = net_BuildAllPeerInfoPacket();
+			net_BroadcastPacket(sendBuffer);
 			buffer_delete(sendBuffer);
 		}
 		else
@@ -27,6 +33,6 @@ switch (recievedPType)
 	break;
 	
 	case (pType.DISCONNECT):
-		net_HostDisconnectClient(clientMap[? string(recievedPort)]);
+		net_HostDisconnectClient(clientMap[? string(recievedIp) + string(recievedPort)]);
 	break;
 }

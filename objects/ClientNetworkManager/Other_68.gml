@@ -10,5 +10,5 @@ buffer_seek(recievedBuffer, buffer_seek_start, 0);
 recievedPType = buffer_read(recievedBuffer, buffer_u8);
 
 net_ClientRecievePacket();
-
+net_HostOrPeerRecievePacket();
 
