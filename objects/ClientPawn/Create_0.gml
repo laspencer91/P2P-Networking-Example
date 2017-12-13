@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Init ClientPawn
 moveToX = x;
 moveToY = y;
 turnTo  = image_angle;

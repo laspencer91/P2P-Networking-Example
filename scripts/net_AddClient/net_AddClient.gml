@@ -10,7 +10,6 @@ var _newClientName = "Default";
 
 if (argument_count > 3) {
 	_newClientName = argument[3];
-	show_message(argument[3]);
 }
 
 var _uniqueKey = string(_clientIp) + string(_clientPort);
